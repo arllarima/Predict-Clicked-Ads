@@ -35,11 +35,11 @@ Categorical Feature:
 
 ## Univariate Analysis
 <p align="center">
-    <kbd> <img src="https://github.com/arllarima/Predict-Clicked-Ads/assets/130117653/5f2bf380-6b81-4eb7-98ce-3cce58cfbc4c" width=700px> </kbd> <br>
+    <kbd> <img src="https://github.com/arllarima/Predict-Clicked-Ads/assets/130117653/5f2bf380-6b81-4eb7-98ce-3cce58cfbc4c" width=600px> </kbd> <br>
     Gambar 3 — Boxplot Numerical Feature
     </p>
 <p align="center">
-    <kbd> <img src="https://github.com/arllarima/Predict-Clicked-Ads/assets/130117653/00d33684-9fea-4c0f-ad49-bd03a77c1781" width=700px> </kbd> <br>
+    <kbd> <img src="https://github.com/arllarima/Predict-Clicked-Ads/assets/130117653/00d33684-9fea-4c0f-ad49-bd03a77c1781" width=600px> </kbd> <br>
     Gambar 4 — Barplot Categorical Feature
     </p>
 
@@ -49,11 +49,11 @@ Categorical Feature:
 ## Bivariate Analysis
 **Numerical Feature** <br>
 <p align="center">
-    <kbd> <img src="https://github.com/arllarima/Predict-Clicked-Ads/assets/130117653/85d64250-38fe-4747-95f9-ff7d8c06b0b7" width=700px> </kbd> <br>
+    <kbd> <img src="https://github.com/arllarima/Predict-Clicked-Ads/assets/130117653/85d64250-38fe-4747-95f9-ff7d8c06b0b7" width=600px> </kbd> <br>
     Gambar 5 — Distribution Numerical Feature Based on Clicked Ads
     </p>
 <p align="center">
-    <kbd> <img src="https://github.com/arllarima/Predict-Clicked-Ads/assets/130117653/d4c2187c-73a4-4147-95ce-08ec22f3316d" width=700px> </kbd> <br>
+    <kbd> <img src="https://github.com/arllarima/Predict-Clicked-Ads/assets/130117653/d4c2187c-73a4-4147-95ce-08ec22f3316d" width=600px> </kbd> <br>
     Gambar 6 — Distribution (Violin Plot) Numerical Feature Based on Clicked Ads
     </p>
 
@@ -69,11 +69,11 @@ Categorical Feature:
 
 **Categorical Feature**
 <p align="center">
-    <kbd> <img src="https://github.com/arllarima/Predict-Clicked-Ads/assets/130117653/b975ceb2-66a8-4f20-b8de-bba9d5474b8b" width=500px> </kbd> <br>
+    <kbd> <img src="https://github.com/arllarima/Predict-Clicked-Ads/assets/130117653/b975ceb2-66a8-4f20-b8de-bba9d5474b8b" width=400px> </kbd> <br>
     Gambar 7 — Clicked on Ads Distribution by Gender
     </p>
 <p align="center">
-    <kbd> <img src="https://github.com/arllarima/Predict-Clicked-Ads/assets/130117653/ff65cc95-576d-42bd-bde7-17f5e91d7551" width=500px> </kbd> <br>
+    <kbd> <img src="https://github.com/arllarima/Predict-Clicked-Ads/assets/130117653/ff65cc95-576d-42bd-bde7-17f5e91d7551" width=400px> </kbd> <br>
     Gambar 8 — Clicked on Ads Distribution by Category
     </p>
 
@@ -82,7 +82,7 @@ Categorical Feature:
 - Kategori dengan potensi klik tertinggi adalah Finance, Fashion, dan Otomotif.
 
 <p align="center">
-    <kbd> <img src="https://github.com/arllarima/Predict-Clicked-Ads/assets/130117653/56d3e2f4-bca1-4a15-941c-5520fd89aab5" width=500px> </kbd> <br>
+    <kbd> <img src="https://github.com/arllarima/Predict-Clicked-Ads/assets/130117653/56d3e2f4-bca1-4a15-941c-5520fd89aab5" width=400px> </kbd> <br>
     Gambar 9 — Daily Total Clicked Ads
     </p>
 
@@ -90,7 +90,7 @@ Categorical Feature:
 - Hari Kamis memiliki konversi klik iklan yang paling baik, jumlah user yang mengklik tinggi dan yang tidak mengklik rendah.
 
 <p align="center">
-    <kbd> <img src="https://github.com/arllarima/Predict-Clicked-Ads/assets/130117653/f2c81018-339c-4bfe-8304-aae6b6bad280" width=500px> </kbd> <br>
+    <kbd> <img src="https://github.com/arllarima/Predict-Clicked-Ads/assets/130117653/f2c81018-339c-4bfe-8304-aae6b6bad280" width=400px> </kbd> <br>
     Gambar 9 — Hourly Total Clicked Ads
     </p>
 
@@ -103,7 +103,7 @@ Categorical Feature:
 ## Multivariate Analysis
 **Heatmap Correlation**
 <p align="center">
-    <kbd> <img src="https://github.com/arllarima/Predict-Clicked-Ads/assets/130117653/2424a4ca-2937-4b46-a5bc-f82b423f8ebd" width=600px> </kbd> <br>
+    <kbd> <img src="https://github.com/arllarima/Predict-Clicked-Ads/assets/130117653/2424a4ca-2937-4b46-a5bc-f82b423f8ebd" width=500px> </kbd> <br>
     Gambar 10 — Heatmap Correlation
     </p>
 
@@ -111,5 +111,68 @@ Categorical Feature:
 - Korelasi tertinggi adalah antara Daily Time Spent on Site dengan Daily Internet Usage, dimana semakin lama user menghabiskan waktu di site maka semakin tinggi pemakaian internet hariannya.
 - Semakin besar income user juga semakin besar pemakaian internet hariannya.
 
+# Data Pre-Processing
+**Table 1. Data Pre-Processing** <br>
+**No**  |     **Treatment**      |    **Actions**     |
+:-----: |    ----------------    |    ------------    |
+1 |   Handling Missing Values    |   - Mengisi missing values dengan nilai modus di fitur `Male` <br> - Mengisi missing values dengan nilai median di fitur `Daily Time Spent on Site`, `Area Income`, `Daily Internet Usage`|
+2 |   Change Datatype     |   - Mengganti datatype Timestamp menjadi datetime <br> - Mengekstrak Tangal, Hari, dan Waktu (Jam). |
+3 |    Duplicated Data    | - Tidak ada data yang duplikat |
+4 |  Feature Encoding | - Label Encoding: `Male`, `Clicked on Ad` <br> - One Hot Encoding: `Category` |
+5 | Feature Extraction | - Menghapus fitur yang tidak digunakan dalam model, yaitu: `Unnamed:0`, `city`, `province` |
+
+# Data Modeling
+## Machine Learning
+**Experiment 1 - Machine Learning Tanpa Standarisasi Fitur**
+<p align="center">
+    <kbd> <img src="https://github.com/arllarima/Predict-Clicked-Ads/assets/130117653/ca06dc5f-c5e4-4b0b-8a04-e7213c356f47" width=500px> </kbd> <br>
+    Gambar 11 — Machine Learning Tanpa Standarisasi Fitur
+    </p>
+
+**Experiment 2 - Machine Learning Dengan Standarisasi Fitur**
+<p align="center">
+    <kbd> <img src="https://github.com/arllarima/Predict-Clicked-Ads/assets/130117653/2c455b90-470c-47e2-ad7a-9f10023dfad9" width=500px> </kbd> <br>
+    Gambar 12 — Machine Learning Dengan Standarisasi Fitur
+    </p>
+
+- Hasil model tanpa standardisasi yang memiliki nilai akurasi tertinggi adalah Random Forest.
+- Algoritma lain yang juga memiliki akurasi yang tinggi adalah XGBoost dan Decision Tree.
+- Hasil model menggunakan standarisasi yang memiliki nilai akurasi tertinggi adalah Logistic Regression.
+- Pada algoritma SVC dan Logistic Regression hasil akurasi meningkat secara signifikan dengan menggunakan standarisasi fitur.
+
+## Model Evaluation
+**Confusion Matrix**
+<p align="center">
+    <kbd> <img src="https://github.com/arllarima/Predict-Clicked-Ads/assets/130117653/485a6670-29fc-4a4e-b9bf-eb4839fc79e5" width=500px> </kbd> <br>
+    Gambar 13 — Confusion Matrix
+    </p>
+
+- Berdasarkan evaluasi algoritma Logistic Regression dari confussion matrix terlihat bahwa model sangat baik memprediksi user yang klik iklan atau tidak dengan nilai kesalahan prediksi yang kecil.
+- Terdapat 143 prediksi benar yang diklasifikasikan user yang tidak mengklik iklan (True Negatives, TN).
+- Terdapat 3 prediksi salah yang diklasifikasikan sebagai user yang mengklik iklan padahal sebenarnya bukan (False Positives, FP).
+- Terdapat 6 prediksi salah yang diklasifikasikan sebagai user yang tidak mengklik iklan padahal sebenarnya adalah mengklik iklan (False Negatives, FN).
+- Terdapat 148 prediksi benar yang diklasifikasikan sebagai user yang mengklik iklan (True Positives, TP).
+
+## Feature Importance
+<p align="center">
+    <kbd> <img src="https://github.com/arllarima/Predict-Clicked-Ads/assets/130117653/b3f0a283-4116-4d35-9052-026643665d19" width=500px> </kbd> <br>
+    Gambar 14 — Feature Importance
+    </p>
+
+<p align="center">
+    <kbd> <img src="https://github.com/arllarima/Predict-Clicked-Ads/assets/130117653/c281faec-4023-4dc2-8a32-a6fa4d1a75c8" width=250px> </kbd> <br>
+    Gambar 15 — Coefficient Feature Importance
+    </p>
+
+- Dari plot feature importance, dapat disimpulkan bahwa Daily Internet Usage, Daily Time Spent on Site, Area Income, dan Age adalah fitur yang paling berpengaruh dalam memprediksi klik iklan.
+- Fitur-fitur tersebut memiliki koefisien magnitudo yang paling besar, dan berkorelasi negatif untuk Daily Internet Usage, Daily Time Spent on Site, dan Area Income, menunjukkan bahwa user yang tidak aktif online dan memiliki pendapatan menengah ke bawah cenderung lebih mungkin mengklik iklan.
+- Sebaliknya, fitur Age memiliki korelasi positif, menandakan bahwa semakin tua usia user, semakin tinggi potensi untuk mengklik iklan.
 
 
+
+
+
+
+
+
+    
