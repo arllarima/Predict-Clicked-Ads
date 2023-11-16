@@ -69,11 +69,11 @@ Categorical Feature:
 
 **Categorical Feature**
 <p align="center">
-    <kbd> <img src="https://github.com/arllarima/Predict-Clicked-Ads/assets/130117653/b975ceb2-66a8-4f20-b8de-bba9d5474b8b" width=400px> </kbd> <br>
+    <kbd> <img src="https://github.com/arllarima/Predict-Clicked-Ads/assets/130117653/b975ceb2-66a8-4f20-b8de-bba9d5474b8b" width=500px> </kbd> <br>
     Gambar 7 — Clicked on Ads Distribution by Gender
     </p>
 <p align="center">
-    <kbd> <img src="https://github.com/arllarima/Predict-Clicked-Ads/assets/130117653/ff65cc95-576d-42bd-bde7-17f5e91d7551" width=400px> </kbd> <br>
+    <kbd> <img src="https://github.com/arllarima/Predict-Clicked-Ads/assets/130117653/ff65cc95-576d-42bd-bde7-17f5e91d7551" width=500px> </kbd> <br>
     Gambar 8 — Clicked on Ads Distribution by Category
     </p>
 
@@ -82,7 +82,7 @@ Categorical Feature:
 - Kategori dengan potensi klik tertinggi adalah Finance, Fashion, dan Otomotif.
 
 <p align="center">
-    <kbd> <img src="https://github.com/arllarima/Predict-Clicked-Ads/assets/130117653/56d3e2f4-bca1-4a15-941c-5520fd89aab5" width=400px> </kbd> <br>
+    <kbd> <img src="https://github.com/arllarima/Predict-Clicked-Ads/assets/130117653/56d3e2f4-bca1-4a15-941c-5520fd89aab5" width=500px> </kbd> <br>
     Gambar 9 — Daily Total Clicked Ads
     </p>
 
@@ -90,7 +90,7 @@ Categorical Feature:
 - Hari Kamis memiliki konversi klik iklan yang paling baik, jumlah user yang mengklik tinggi dan yang tidak mengklik rendah.
 
 <p align="center">
-    <kbd> <img src="https://github.com/arllarima/Predict-Clicked-Ads/assets/130117653/f2c81018-339c-4bfe-8304-aae6b6bad280" width=400px> </kbd> <br>
+    <kbd> <img src="https://github.com/arllarima/Predict-Clicked-Ads/assets/130117653/f2c81018-339c-4bfe-8304-aae6b6bad280" width=500px> </kbd> <br>
     Gambar 9 — Hourly Total Clicked Ads
     </p>
 
@@ -103,7 +103,7 @@ Categorical Feature:
 ## Multivariate Analysis
 **Heatmap Correlation**
 <p align="center">
-    <kbd> <img src="https://github.com/arllarima/Predict-Clicked-Ads/assets/130117653/2424a4ca-2937-4b46-a5bc-f82b423f8ebd" width=500px> </kbd> <br>
+    <kbd> <img src="https://github.com/arllarima/Predict-Clicked-Ads/assets/130117653/2424a4ca-2937-4b46-a5bc-f82b423f8ebd" width=600px> </kbd> <br>
     Gambar 10 — Heatmap Correlation
     </p>
 
@@ -167,6 +167,23 @@ Categorical Feature:
 - Dari plot feature importance, dapat disimpulkan bahwa Daily Internet Usage, Daily Time Spent on Site, Area Income, dan Age adalah fitur yang paling berpengaruh dalam memprediksi klik iklan.
 - Fitur-fitur tersebut memiliki koefisien magnitudo yang paling besar, dan berkorelasi negatif untuk Daily Internet Usage, Daily Time Spent on Site, dan Area Income, menunjukkan bahwa user yang tidak aktif online dan memiliki pendapatan menengah ke bawah cenderung lebih mungkin mengklik iklan.
 - Sebaliknya, fitur Age memiliki korelasi positif, menandakan bahwa semakin tua usia user, semakin tinggi potensi untuk mengklik iklan.
+
+# Business Recommendation
+Rekomendasi berdasarkan Feature Importance dan insight, adalah: <br>
+
+**1.   Target Pengguna Non-Aktif:**
+- Buat iklan singkat dan menarik untuk menangkap perhatian pengguna yang jarang menghabiskan waktu di situs (kurang dari 1 jam) dan jarang menggunakan internet, karena pengguna ini cenderung lebih mungkin mengklik iklan.
+- Manfaatkan retargeting dengan menampilkan iklan yang relevan berulang kali untuk meningkatkan awareness.
+
+**2.   Relevansi Konten Iklan:**
+- Pastikan konten iklan sesuai dengan minat dan kebutuhan pengguna non-aktif.
+
+**3.   Penawaran Harga Terjangkau:**
+- Berikan penawaran harga yang terjangkau, diskon, atau promo untuk menarik pengguna dengan area income rendah.
+
+**4.   Optimalisasi Waktu dan Hari:**
+- Manfaatkan hari Rabu, Kamis, dan Minggu untuk penayangan iklan karena memiliki konversi klik iklan yang baik.
+- Pilih jam-jam pukul 00.00, 09.00, dan 18.00 yang menunjukkan potensi tinggi pengguna mengklik iklan dan melakukan pembelian.
 
 
 
